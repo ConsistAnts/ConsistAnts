@@ -1,0 +1,52 @@
+sudo: false 
+
+language: java
+# Set display to execute UI tests on
+
+jdk: oraclejdk8
+
+env: 
+  global:
+   - DISPLAY=:99.0  
+   - MAVEN_DIR=apache-maven-3.5.0
+
+addons:
+  apt:
+    packages:
+    - metacity
+
+# Install recent maven version since we need polyglot support
+# which was introduced in maven 3.3
+before_install:
+ # Only download maven if it wasn't cached
+ - export M2_HOME=$HOME/${MAVEN_DIR}
+ - |
+   if [ ! -d $HOME/${MAVEN_DIR}/bin ]; 
+   then
+    pushd ~
+    wget http://apache.lauf-forum.at/maven/maven-3/3.5.0/binaries/${MAVEN_DIR}-bin.tar.gz
+    tar xvf ${MAVEN_DIR}-bin.tar.gz
+
+    popd
+   fi
+ - export PATH=$M2_HOME/bin:$PATH
+ # Start virtual display and window manager to execute our UI tests on
+ - sh -e /etc/init.d/xvfb start
+ - sleep 3
+ - metacity --sm-disable --replace 2> metacity.err &
+
+# override default mvn install step with nop, our dependencies
+# are installed by tycho
+install: /bin/true
+
+script:
+  - mvn clean verify
+
+notifications:
+  email: false
+
+cache:  
+  directories:  
+   - $HOME/.m2 
+   - $HOME/.p2
+   - $HOME/${MAVEN_DIR}
