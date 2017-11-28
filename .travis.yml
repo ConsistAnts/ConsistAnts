@@ -40,7 +40,7 @@ before_install:
 install: /bin/true
 
 script:
-  - mvn clean verify
+  - $HOME/${MAVEN_DIR}/bin/mvn clean verify
 
 notifications:
   email: false
