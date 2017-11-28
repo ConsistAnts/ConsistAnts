@@ -120,10 +120,6 @@
           <value>${git.clone.consistency.checking.dev.project.git.location}/releng/de.hu_berlin.cchecker.releng/de.hu_berlin.cchecker.releng.target</value>
         </detail>
         <detail
-            key="extraUnits">
-          <value>org.eclipse.equinox.executable.feature.group</value>
-        </detail>
-        <detail
             key="includeAllPlatforms">
           <value>false</value>
         </detail>
