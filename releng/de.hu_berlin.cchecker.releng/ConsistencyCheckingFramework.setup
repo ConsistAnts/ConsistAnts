@@ -90,7 +90,7 @@
   <setupTask
       xsi:type="git:GitCloneTask"
       id="git.clone.consistency.checking.dev.project.git"
-      remoteURI="ThottChief/consistency-checking-dev-project">
+      remoteURI="ConsistAnts/ConsistAnts">
     <annotation
         source="http://www.eclipse.org/oomph/setup/InducedChoices">
       <detail
@@ -187,7 +187,7 @@
     <setupTask
         xsi:type="setup:EclipseIniTask"
         option="-Doomph.redirection.consistency.checking.dev.project.git"
-        value="=https://raw.githubusercontent.com/ThottChief/consistency-checking-dev-project/master/releng/de.hu_berlin.cchecker.releng/ConsistencyCheckingFramework.setup->${git.clone.consistency.checking.dev.project.git.location|uri}/releng/de.hu_berlin.cchecker.releng/ConsistencyCheckingFramework.setup"
+        value="=https://raw.githubusercontent.com/ConsistAnts/ConsistAnts/master/releng/de.hu_berlin.cchecker.releng/ConsistencyCheckingFramework.setup"
         vm="true">
       <description>
         Set an Oomph redirection system property to redirect the

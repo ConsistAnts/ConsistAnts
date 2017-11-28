@@ -1,6 +1,7 @@
 # consistency-checking-dev-project
 
-[![Build Status](https://travis-ci.com/ThottChief/consistency-checking-dev-project.svg?token=UTuvL9fExzBAsLVxCUsh&branch=master)](https://travis-ci.com/ThottChief/consistency-checking-dev-project)
+
+[![Build Status](https://travis-ci.org/ConsistAnts/ConsistAnts.svg?branch=master)](https://travis-ci.org/ConsistAnts/ConsistAnts)
 
 ## Getting Started
 
