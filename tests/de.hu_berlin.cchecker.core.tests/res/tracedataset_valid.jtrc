@@ -1,0 +1,31 @@
+{
+  "transitionIdToLabel": {
+   		"1":"A_TO_B",
+   		"2":"B_TO_A",
+   		"3":"B_TO_C",
+   		"4":"C_TO_B"
+  },
+  "traces": [
+    {
+      "id":1,
+      "transitions": [
+        {
+          "id":1,
+          "ordinal":1
+        },
+         {
+          "id":3,
+          "ordinal":2
+        },
+         {
+          "id":4,
+          "ordinal":3
+        },
+         {
+          "id":2,
+          "ordinal":4
+        }
+      ]
+    }
+  ]
+}

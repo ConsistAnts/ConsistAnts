@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: de.hu_berlin.cchecker.headless
+Bundle-SymbolicName: de.hu_berlin.cchecker.headless
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: de.hu_berlin.cchecker.core;bundle-version="1.0.0",
+ de.hu_berlin.cchecker.tools;bundle-version="1.0.0"
+Import-Package: org.eclipse.core.runtime

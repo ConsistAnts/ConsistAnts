@@ -1,0 +1,141 @@
+{
+  "eClass": "dade.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticAutomata",
+  "states": [
+    {
+      "stateId": 1,
+      "outgoingTransitions": [
+        {
+          "transitionId": 1,
+          "probability": 1,
+          "target": {
+            "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+            "$ref": "\/\/@states.1"
+          }
+        }
+      ]
+    },
+    {
+      "stateId": 2,
+      "outgoingTransitions": [
+        {
+          "transitionId": 2,
+          "probability": 0.8095,
+          "target": {
+            "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+            "$ref": "\/\/@states.2"
+          }
+        },
+        {
+          "transitionId": 3,
+          "probability": 0.1905,
+          "target": {
+            "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+            "$ref": "\/\/@states.2"
+          }
+        }
+      ]
+    },
+    {
+      "stateId": 3,
+      "terminatingProbability": 0.0857,
+      "outgoingTransitions": [
+        {
+          "transitionId": 4,
+          "probability": 0.1,
+          "target": {
+            "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+            "$ref": "\/\/@states.3"
+          }
+        },
+        {
+          "transitionId": 2,
+          "probability": 0.1143,
+          "target": {
+            "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+            "$ref": "\/\/@states.4"
+          }
+        },
+        {
+          "transitionId": 3,
+          "probability": 0.7,
+          "target": {
+            "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+            "$ref": "\/\/@states.2"
+          }
+        }
+      ]
+    },
+    {
+      "stateId": 5,
+      "terminatingProbability": 0.1795,
+      "outgoingTransitions": [
+        {
+          "transitionId": 2,
+          "probability": 0.8205,
+          "target": {
+            "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+            "$ref": "\/\/@states.3"
+          }
+        }
+      ]
+    },
+    {
+      "stateId": 6,
+      "terminatingProbability": 0.1714,
+      "outgoingTransitions": [
+        {
+          "transitionId": 4,
+          "probability": 0.1429,
+          "target": {
+            "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+            "$ref": "\/\/@states.5"
+          }
+        },
+        {
+          "transitionId": 2,
+          "probability": 0.6857,
+          "target": {
+            "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+            "$ref": "\/\/@states.4"
+          }
+        }
+      ]
+    },
+    {
+      "stateId": 10,
+      "terminatingProbability": 0.2222,
+      "outgoingTransitions": [
+        {
+          "transitionId": 4,
+          "probability": 0.7778,
+          "target": {
+            "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+            "$ref": "\/\/@states.5"
+          }
+        }
+      ]
+    }
+  ],
+  "startState": {
+    "eClass": "de.hu_berlin.cchecker.core.models.pdfa#\/\/ProbabilisticState",
+    "$ref": "\/\/@states.0"
+  },
+  "transitionLabels": [
+    {
+      "key": 1,
+      "value": "s"
+    },
+    {
+      "key": 2,
+      "value": "t"
+    },
+    {
+      "key": 3,
+      "value": "w"
+    },
+    {
+      "key": 4,
+      "value": "l"
+    }
+  ]
+}

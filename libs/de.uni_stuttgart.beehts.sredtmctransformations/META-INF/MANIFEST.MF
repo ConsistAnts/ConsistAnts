@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SRE-DTMC-Transformations
+Bundle-SymbolicName: de.uni_stuttgart.beehts.sredtmctransformations
+Bundle-Version: 1.0.0
+Bundle-ClassPath: de.uni_stuttgart.beehts.sredtmctransformations.jar
+Bundle-Vendor: de.uni_stuttgart.beehts
+Export-Package: de.uni_stuttgart.beehts.generator,
+ de.uni_stuttgart.beehts.model,
+ de.uni_stuttgart.beehts.model.construction,
+ de.uni_stuttgart.beehts.transformation,
+ de.uni_stuttgart.beehts.util
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

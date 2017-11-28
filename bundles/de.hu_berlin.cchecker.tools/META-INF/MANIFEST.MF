@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: de.hu_berlin.cchecker.tools
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.google.guava;bundle-version="21.0.0",
+ de.hu_berlin.cchecker.core;bundle-version="1.0.0"
+Export-Package: de.hu_berlin.cchecker.tools.pdfa.generation,
+ de.hu_berlin.cchecker.tools.traces.generation
+Bundle-Name: de.hu_berlin.cchecker.tools
+Bundle-Vendor: de.hu_berlin.cchecker
+Import-Package: com.fasterxml.jackson.databind,
+ org.eclipse.core.runtime;version="3.5.0"

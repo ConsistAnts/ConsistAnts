@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="de.hu_berlin.cchecker.core.models.pdfa"
+            class="de.hu_berlin.cchecker.core.models.pdfa.PdfaPackage"
+            genModel="src/de/hu_berlin/cchecker/core/models/pdfa/ProbabilisticAutomata.xcore"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CheckingReport -->
+      <package
+            uri="de.hu_berlin.cchecker.core.checking.report"
+            class="de.hu_berlin.cchecker.core.checking.report.ReportPackage"
+            genModel="src/de/hu_berlin/cchecker/core/checking/report/CheckingReport.xcore"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,74 @@
+{
+	"transitionIdToLabel": {
+		"0":"a"
+		"1":"b"
+		"2":"c"
+		"3":"d"
+		"4":"e"
+		"5":"f"
+		"6":"w"
+		"7":"x"
+		"8":"y"
+		"9":"z"
+	},
+	"traces" : [
+		{
+			"id":1,
+			"transitions": [
+				{
+					"id":1
+					"ordinal":1
+				},
+				{
+					"id":3
+					"ordinal":2
+				},
+				{
+					"id":6
+					"ordinal":3
+				},
+			]
+		},
+		{
+			"id":2,
+			"transitions": [
+				{
+					"id":1
+					"ordinal":1
+				},
+				{
+					"id":4
+					"ordinal":2
+				},
+				{
+					"id":7
+					"ordinal":3
+				},
+				{
+					"id":2
+					"ordinal":4
+				},
+				{
+					"id":5
+					"ordinal":5
+				},
+				{
+					"id":8
+					"ordinal":6
+				},
+				{
+					"id":b
+					"ordinal":7
+				},
+				{
+					"id":6
+					"ordinal":8
+				},
+				{
+					"id":9
+					"ordinal":9
+				}
+			]
+		}
+	]
+}

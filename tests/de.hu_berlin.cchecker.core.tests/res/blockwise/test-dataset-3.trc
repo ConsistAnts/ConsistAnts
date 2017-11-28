@@ -1,0 +1,486 @@
+{
+    "traces": [
+        {
+            "id": 1,
+            "transitions": [
+                {
+                    "id": "4",
+                    "ordinal": 1
+                },
+                {
+                    "id": "0",
+                    "ordinal": 2
+                },
+                {
+                    "id": "0",
+                    "ordinal": 3
+                },
+                {
+                    "id": "0",
+                    "ordinal": 4
+                },
+                {
+                    "id": "2",
+                    "ordinal": 5
+                },
+                {
+                    "id": "4",
+                    "ordinal": 6
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "transitions": [
+                {
+                    "id": "4",
+                    "ordinal": 1
+                },
+                {
+                    "id": "3",
+                    "ordinal": 2
+                },
+                {
+                    "id": "2",
+                    "ordinal": 3
+                },
+                {
+                    "id": "0",
+                    "ordinal": 4
+                },
+                {
+                    "id": "3",
+                    "ordinal": 5
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "transitions": [
+                {
+                    "id": "3",
+                    "ordinal": 1
+                },
+                {
+                    "id": "2",
+                    "ordinal": 2
+                },
+                {
+                    "id": "2",
+                    "ordinal": 3
+                },
+                {
+                    "id": "2",
+                    "ordinal": 4
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "transitions": [
+                {
+                    "id": "4",
+                    "ordinal": 1
+                },
+                {
+                    "id": "0",
+                    "ordinal": 2
+                },
+                {
+                    "id": "0",
+                    "ordinal": 3
+                },
+                {
+                    "id": "0",
+                    "ordinal": 4
+                },
+                {
+                    "id": "3",
+                    "ordinal": 5
+                },
+                {
+                    "id": "3",
+                    "ordinal": 6
+                },
+                {
+                    "id": "4",
+                    "ordinal": 7
+                },
+                {
+                    "id": "1",
+                    "ordinal": 8
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "transitions": [
+                {
+                    "id": "0",
+                    "ordinal": 1
+                },
+                {
+                    "id": "0",
+                    "ordinal": 2
+                },
+                {
+                    "id": "1",
+                    "ordinal": 3
+                },
+                {
+                    "id": "0",
+                    "ordinal": 4
+                },
+                {
+                    "id": "0",
+                    "ordinal": 5
+                },
+                {
+                    "id": "1",
+                    "ordinal": 6
+                },
+                {
+                    "id": "0",
+                    "ordinal": 7
+                },
+                {
+                    "id": "1",
+                    "ordinal": 8
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "transitions": [
+                {
+                    "id": "0",
+                    "ordinal": 1
+                },
+                {
+                    "id": "1",
+                    "ordinal": 2
+                },
+                {
+                    "id": "3",
+                    "ordinal": 3
+                },
+                {
+                    "id": "3",
+                    "ordinal": 4
+                },
+                {
+                    "id": "0",
+                    "ordinal": 5
+                },
+                {
+                    "id": "4",
+                    "ordinal": 6
+                },
+                {
+                    "id": "0",
+                    "ordinal": 7
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "transitions": [
+                {
+                    "id": "1",
+                    "ordinal": 1
+                },
+                {
+                    "id": "1",
+                    "ordinal": 2
+                },
+                {
+                    "id": "2",
+                    "ordinal": 3
+                },
+                {
+                    "id": "2",
+                    "ordinal": 4
+                },
+                {
+                    "id": "4",
+                    "ordinal": 5
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "transitions": [
+                {
+                    "id": "1",
+                    "ordinal": 1
+                },
+                {
+                    "id": "1",
+                    "ordinal": 2
+                },
+                {
+                    "id": "4",
+                    "ordinal": 3
+                },
+                {
+                    "id": "1",
+                    "ordinal": 4
+                },
+                {
+                    "id": "2",
+                    "ordinal": 5
+                },
+                {
+                    "id": "1",
+                    "ordinal": 6
+                },
+                {
+                    "id": "2",
+                    "ordinal": 7
+                },
+                {
+                    "id": "3",
+                    "ordinal": 8
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "transitions": [
+                {
+                    "id": "2",
+                    "ordinal": 1
+                },
+                {
+                    "id": "1",
+                    "ordinal": 2
+                },
+                {
+                    "id": "1",
+                    "ordinal": 3
+                },
+                {
+                    "id": "1",
+                    "ordinal": 4
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "transitions": [
+                {
+                    "id": "4",
+                    "ordinal": 1
+                },
+                {
+                    "id": "1",
+                    "ordinal": 2
+                },
+                {
+                    "id": "3",
+                    "ordinal": 3
+                },
+                {
+                    "id": "4",
+                    "ordinal": 4
+                },
+                {
+                    "id": "1",
+                    "ordinal": 5
+                },
+                {
+                    "id": "1",
+                    "ordinal": 6
+                },
+                {
+                    "id": "0",
+                    "ordinal": 7
+                },
+                {
+                    "id": "0",
+                    "ordinal": 8
+                },
+                {
+                    "id": "1",
+                    "ordinal": 9
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "transitions": [
+                {
+                    "id": "3",
+                    "ordinal": 1
+                },
+                {
+                    "id": "4",
+                    "ordinal": 2
+                },
+                {
+                    "id": "0",
+                    "ordinal": 3
+                },
+                {
+                    "id": "3",
+                    "ordinal": 4
+                },
+                {
+                    "id": "0",
+                    "ordinal": 5
+                },
+                {
+                    "id": "3",
+                    "ordinal": 6
+                },
+                {
+                    "id": "3",
+                    "ordinal": 7
+                },
+                {
+                    "id": "0",
+                    "ordinal": 8
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "transitions": [
+                {
+                    "id": "0",
+                    "ordinal": 1
+                },
+                {
+                    "id": "1",
+                    "ordinal": 2
+                },
+                {
+                    "id": "1",
+                    "ordinal": 3
+                },
+                {
+                    "id": "2",
+                    "ordinal": 4
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "transitions": [
+                {
+                    "id": "2",
+                    "ordinal": 1
+                },
+                {
+                    "id": "1",
+                    "ordinal": 2
+                },
+                {
+                    "id": "0",
+                    "ordinal": 3
+                },
+                {
+                    "id": "4",
+                    "ordinal": 4
+                },
+                {
+                    "id": "2",
+                    "ordinal": 5
+                },
+                {
+                    "id": "3",
+                    "ordinal": 6
+                },
+                {
+                    "id": "2",
+                    "ordinal": 7
+                },
+                {
+                    "id": "2",
+                    "ordinal": 8
+                },
+                {
+                    "id": "1",
+                    "ordinal": 9
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "transitions": [
+                {
+                    "id": "2",
+                    "ordinal": 1
+                },
+                {
+                    "id": "2",
+                    "ordinal": 2
+                },
+                {
+                    "id": "4",
+                    "ordinal": 3
+                },
+                {
+                    "id": "1",
+                    "ordinal": 4
+                },
+                {
+                    "id": "0",
+                    "ordinal": 5
+                },
+                {
+                    "id": "3",
+                    "ordinal": 6
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "transitions": [
+                {
+                    "id": "4",
+                    "ordinal": 1
+                },
+                {
+                    "id": "3",
+                    "ordinal": 2
+                },
+                {
+                    "id": "1",
+                    "ordinal": 3
+                },
+                {
+                    "id": "0",
+                    "ordinal": 4
+                },
+                {
+                    "id": "4",
+                    "ordinal": 5
+                },
+                {
+                    "id": "1",
+                    "ordinal": 6
+                },
+                {
+                    "id": "4",
+                    "ordinal": 7
+                },
+                {
+                    "id": "0",
+                    "ordinal": 8
+                },
+                {
+                    "id": "0",
+                    "ordinal": 9
+                }
+            ]
+        }
+    ],
+    "transitionIdToLabel": {
+        "0": "a",
+        "1": "b",
+        "2": "c",
+        "3": "d",
+        "4": "e"
+    }
+}

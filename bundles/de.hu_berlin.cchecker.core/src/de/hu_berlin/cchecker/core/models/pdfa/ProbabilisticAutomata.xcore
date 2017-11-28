@@ -1,0 +1,95 @@
+package de.hu_berlin.cchecker.core.models.pdfa
+
+import java.util.Map
+
+/**
+ * A probabilistic automata transition.
+ * 
+ * Comprises of a transition id as well as probability.
+ * 
+ * Also references the target and source state.
+ * 
+ */
+class ProbabilisticTransition {
+	/**
+	 * The id of this transition. 
+	 * 
+	 * To get a human-readable label for this transition,
+	 * use the transitionLabels mapping of the corresponding {@link ProbabilisticAutomata} 
+	 * 
+	 */
+	int transitionId
+	
+	/**
+	 * The probability of this transition.
+	 */
+	double probability
+	
+	/**
+	 * The target-state of this transition.
+	 */
+	refers ProbabilisticState target
+	
+	/**
+	 * The source state of this transition.
+	 */
+	container ProbabilisticState source opposite outgoingTransitions
+}
+
+/**
+ * A probabilistic state.
+ */
+class ProbabilisticState {
+	/** The id of this state. */
+	int stateId
+	
+	/**
+	 * All outgoing transitions of this state.
+	 */
+	contains ProbabilisticTransition[] outgoingTransitions opposite source
+	
+	/**
+	 * Specifies whether this is an accepting state.
+	 */
+	boolean terminating
+	
+	/**
+	 * Specifies the probability of terminating in this state.
+	 */
+	double terminatingProbability
+	
+	/**
+	 * The automata this state is contained in.
+	 */
+	container ProbabilisticAutomata automata opposite states
+}
+
+/**
+ * Mapping between transition IDs and their
+ * actual string-based label.
+ */
+class TransitionLabelPair wraps Map$Entry {
+	Integer key
+	String value
+}
+
+class ProbabilisticAutomata {
+	/**
+	 * All the states of this automata.
+	 */
+	contains ProbabilisticState[] states opposite automata
+	
+	/**
+	 * The start state of this automata.
+	 */
+	refers ProbabilisticState startState
+	
+	/**
+	 * The id-to-labels mapping for this automata.
+	 */
+	contains TransitionLabelPair[] transitionLabels
+	
+	op String toString() {
+		return ProbabilisticAutomataUtils.toTextualRepresentation(this);
+	} 
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="Generated from Consistency Checking Framework" sequenceNumber="4">
+  <locations>
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.emf.ecore.xcore.lib" version="1.1.100.v20170613-0242"/>
+      <unit id="org.eclipse.equinox.executable.feature.group" version="3.7.0.v20170531-1133"/>
+      <unit id="org.eclipse.gef.zest.fx" version="5.0.0.201706131249"/>
+      <unit id="org.eclipse.sdk.feature.group" version="4.7.0.v20170612-1255"/>
+      <unit id="org.eclipse.swtbot.eclipse.core" version="2.6.0.201706141832"/>
+      <unit id="org.eclipse.swtbot.eclipse.finder" version="2.6.0.201706141832"/>
+      <unit id="org.eclipse.swtbot.junit4_x" version="2.6.0.201706141832"/>
+      <unit id="org.eclipse.zest.core" version="1.5.300.201606061308"/>
+      <repository location="http://download.eclipse.org/releases/oxygen"/>
+    </location>
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="com.google.inject.multibindings" version="3.0.0.v201605172100"/>
+      <repository location="http://download.eclipse.org/tools/gef/gef4/updates/releases"/>
+    </location>
+  </locations>
+</target>

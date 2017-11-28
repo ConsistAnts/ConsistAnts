@@ -1,0 +1,57 @@
+package de.hu_berlin.cchecker.core.checking.report
+
+import de.hu_berlin.cchecker.core.models.pdfa.TransitionLabelPair
+
+/** 
+ * A CounterExample represents one or muliple traces in 
+ * the trace data set, that cannot be re-produced in the model
+ * the consistency check was performed with. 
+ */
+class CounterExample {
+	String[] traceIds
+	int[] trace
+	int index
+	
+	container ConsistencyReport report opposite counterExamples
+	
+	op String toString() {
+		return "CounterExample with IDs" + traceIds.toString() + " for trace " + trace.toString + " at index " + index;
+	}
+}
+
+class MatrixRow {
+	double[] elements
+	container ConsistencyLengthResult result opposite resultMatrix
+}
+
+/** 
+ * A ConsistencyLengthResult represents the consistency of a 
+ * check regarding a specific trace length. 
+ */
+class ConsistencyLengthResult {
+	int traceLength
+	contains MatrixRow[] resultMatrix opposite result 
+	
+	double result
+	
+	container ConsistencyReport report opposite footprintMatrices
+}
+
+/**
+ * A consistency report contains all the information a consistency checking
+ * algorithm provides to measure consistency.
+ */
+class ConsistencyReport {
+	Date createdOn
+	
+	String modelPath
+	String modelChecksum
+	
+	String traceDataSetPath
+	String traceDataSetChecksum
+	
+	contains TransitionLabelPair[] labelMapping
+	
+	contains ConsistencyLengthResult[] footprintMatrices opposite report
+	contains CounterExample[] counterExamples opposite report
+}

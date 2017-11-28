@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+    http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.hu_berlin.cchecker</groupId>
+	<artifactId>de.hu_berlin.cchecker</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<tycho-version>1.0.0</tycho-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<!-- Main Bundles (bundles/) -->
+		<module>bundles/de.hu_berlin.cchecker.core</module>
+		<module>bundles/de.hu_berlin.cchecker.headless</module>
+		<module>bundles/de.hu_berlin.cchecker.ui</module>
+		<module>bundles/de.hu_berlin.cchecker.tools</module>
+		<module>bundles/de.hu_berlin.cchecker.tools.ui</module>
+	
+		<!-- Test Bundles (tests/) -->	
+		<module>tests/de.hu_berlin.cchecker.core.tests</module>
+		<module>tests/de.hu_berlin.cchecker.ui.tests</module>
+		<module>tests/de.hu_berlin.cchecker.tools.tests</module>
+
+		<!-- Release Engineering (releng/) -->
+		<module>releng/de.hu_berlin.cchecker.releng</module>
+	
+		<!-- External Dependencies (libs/) -->	
+		<module>libs/com.fasterxml.jackson</module>
+		<module>libs/org.emfjson-jackson</module>
+		<module>libs/de.uni_stuttgart.beehts.sredtmctransformations</module>
+		<module>libs/edu.duke.cs.jflap</module>
+	</modules>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-surefire-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<argLine>${jvm.tests.args}</argLine>
+					<product>org.eclipse.sdk.ide</product>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<target>
+						<artifact>
+							<groupId>de.hu_berlin.cchecker</groupId>
+							<artifactId>de.hu_berlin.cchecker.releng</artifactId>
+							<version>0.0.1-SNAPSHOT</version>
+						</artifact>
+					</target>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

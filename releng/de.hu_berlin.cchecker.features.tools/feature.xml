@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="ConsistAnts_Tools"
+      label="ConsistAnts Tools"
+      version="1.0.0.qualifier">
+
+   <description url="http://www.example.com/description">
+      Additional Tools for the ConsistAnts Eclipse Plugin.
+   </description>
+
+   <includes
+         id="ConsistAnts"
+         version="0.0.0"/>
+
+   <plugin
+         id="de.hu_berlin.cchecker.tools"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.hu_berlin.cchecker.tools.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

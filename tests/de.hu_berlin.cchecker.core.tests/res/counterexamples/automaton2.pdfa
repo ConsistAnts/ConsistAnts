@@ -1,0 +1,887 @@
+{
+  "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticAutomata",
+  "states" : [ {
+    "stateId" : 1,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.22351660804066575,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.1"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.08204695291742178,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.2"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.14282113049382802,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.3"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.29622044596800373,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.4"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.16067750877517917,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.5"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.09471735380490154,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.6"
+      }
+    } ]
+  }, {
+    "stateId" : 2,
+    "terminating" : true,
+    "terminatingProbability" : 0.39455619380963963,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.2834441791332915,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.6"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.20199746030870297,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.7"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.023854056926111852,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.8"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.0853711345953377,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.9"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.010776975226916227,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.10"
+      }
+    } ]
+  }, {
+    "stateId" : 3,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.12447926182770366,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.11"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.27644943307579395,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.12"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.05957516821207817,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.13"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.010962748820427902,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.14"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.3441307043655067,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.15"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.18440268369848972,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.7"
+      }
+    } ]
+  }, {
+    "stateId" : 4,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.20361993678514193,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.0"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.2251398723874049,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.16"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.15256147267232098,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.5"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.17969682113820828,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.6"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.22558950146622397,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.12"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.013392395550699846,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.2"
+      }
+    } ]
+  }, {
+    "stateId" : 5,
+    "terminating" : true,
+    "terminatingProbability" : 0.19749080967232727,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.23092143822245503,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.14"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.11854512139018802,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.17"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.24435223399632724,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.6"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.0731959626089023,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.7"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.13549443410980005,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.5"
+      }
+    } ]
+  }, {
+    "stateId" : 6,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.34156212292730564,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.12"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.09949642286486199,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.7"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.1470809301011905,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.0"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.21025704942697784,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.2"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.15827843972931477,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.10"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.04332503495034925,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.17"
+      }
+    } ]
+  }, {
+    "stateId" : 7,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.13605670583100746,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.16"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.07936056425482514,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.9"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.2675786251355904,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.14"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.1071089444370759,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.10"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.19749713014111028,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.2"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.21239803020039094,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.17"
+      }
+    } ]
+  }, {
+    "stateId" : 8,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.08162002578948392,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.10"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.19153015666229742,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.3"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.23222873672295102,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.14"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.03356449192744048,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.11"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.2071577082496589,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.12"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.2538988806481681,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.18"
+      }
+    } ]
+  }, {
+    "stateId" : 9,
+    "terminating" : true,
+    "terminatingProbability" : 0.049587303481430846,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.23016220305770696,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.11"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.17329659149676763,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.13"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.1816012944164791,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.1"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.29908806267048194,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.19"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.06626454487713353,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.12"
+      }
+    } ]
+  }, {
+    "stateId" : 10,
+    "terminating" : true,
+    "terminatingProbability" : 0.18623866988120377,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.06848462810478206,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.19"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.09065110136362575,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.16"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.25159284328190507,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.5"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.12179698658062658,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.3"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.2812357707878569,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.1"
+      }
+    } ]
+  }, {
+    "stateId" : 11,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.24668952990496354,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.14"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.03839145750941039,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.13"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.1855104417462616,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.11"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.2353041771063222,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.17"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.08295842788077519,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.19"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.21114596585226703,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.7"
+      }
+    } ]
+  }, {
+    "stateId" : 12,
+    "terminating" : true,
+    "terminatingProbability" : 0.3353709334794769,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.20239478844639086,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.19"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.1468513804768024,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.18"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.0017562209193848742,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.10"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.020344019286899835,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.1"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.2932826573910453,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.8"
+      }
+    } ]
+  }, {
+    "stateId" : 13,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.18632084153340672,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.19"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.22754644994797169,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.4"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.23628971419708306,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.15"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.01596728990474539,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.16"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.13963450821149473,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.6"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.19424119620529848,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.13"
+      }
+    } ]
+  }, {
+    "stateId" : 14,
+    "terminating" : true,
+    "terminatingProbability" : 0.23111567346402823,
+    "outgoingTransitions" : [ {
+      "transitionId" : 2,
+      "probability" : 0.03916359034502329,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.1"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.30177519485077503,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.19"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.0029740849076724464,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.11"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.2894774609756572,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.3"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.1354939954568439,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.17"
+      }
+    } ]
+  }, {
+    "stateId" : 15,
+    "terminating" : true,
+    "terminatingProbability" : 0.12376334286575473,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.19728209437555955,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.8"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.03566121389963917,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.10"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.14456034686295788,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.18"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.2869725863138188,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.3"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.2117604156822698,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.0"
+      }
+    } ]
+  }, {
+    "stateId" : 16,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.3370182066221108,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.9"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.07726074990530692,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.2"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.14458059594685474,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.15"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.12059134119772377,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.7"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.1334555265332899,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.6"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.1870935797947139,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.10"
+      }
+    } ]
+  }, {
+    "stateId" : 17,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.08630638258802183,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.18"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.043935702278112394,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.9"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.2774919766452269,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.8"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.2847328216109798,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.17"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.14820575284983062,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.14"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.15932736402782854,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.7"
+      }
+    } ]
+  }, {
+    "stateId" : 18,
+    "terminating" : true,
+    "terminatingProbability" : 0.11688383991255591,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.14769745252237085,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.3"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.19912006632762116,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.8"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.16990924913140668,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.15"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.1829727323365786,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.6"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.18341665976946672,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.4"
+      }
+    } ]
+  }, {
+    "stateId" : 19,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.29340432042874387,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.7"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.060262217201514534,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.12"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.32684718426257514,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.14"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.020654923424123468,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.15"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.142507256872159,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.5"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.15632409781088397,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.0"
+      }
+    } ]
+  }, {
+    "stateId" : 20,
+    "outgoingTransitions" : [ {
+      "transitionId" : 1,
+      "probability" : 0.05883384453514734,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.10"
+      }
+    }, {
+      "transitionId" : 2,
+      "probability" : 0.08259487904686559,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.1"
+      }
+    }, {
+      "transitionId" : 3,
+      "probability" : 0.04640486635115348,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.9"
+      }
+    }, {
+      "transitionId" : 4,
+      "probability" : 0.11486255357098807,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.3"
+      }
+    }, {
+      "transitionId" : 5,
+      "probability" : 0.35884902469766067,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.15"
+      }
+    }, {
+      "transitionId" : 6,
+      "probability" : 0.3384548317981848,
+      "target" : {
+        "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+        "$ref" : "//@states.0"
+      }
+    } ]
+  } ],
+  "startState" : {
+    "eClass" : "de.hu_berlin.cchecker.core.models.pdfa#//ProbabilisticState",
+    "$ref" : "//@states.0"
+  },
+  "transitionLabels" : [ {
+    "key" : 1,
+    "value" : "C"
+  }, {
+    "key" : 2,
+    "value" : "B"
+  }, {
+    "key" : 3,
+    "value" : "A"
+  }, {
+    "key" : 4,
+    "value" : "D"
+  }, {
+    "key" : 5,
+    "value" : "F"
+  }, {
+    "key" : 6,
+    "value" : "E"
+  } ]
+}

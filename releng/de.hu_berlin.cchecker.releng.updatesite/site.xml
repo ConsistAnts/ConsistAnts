@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/ConsistAnts_1.0.0.201709251206.jar" id="ConsistAnts" version="1.0.0.201709251206">
+      <category name="consistency_checking"/>
+   </feature>
+   <feature url="features/ConsistAnts_Tools_1.0.0.201709251206.jar" id="ConsistAnts_Tools" version="1.0.0.201709251206">
+      <category name="consistency_checking"/>
+   </feature>
+   <category-def name="consistency_checking" label="Consistency Checking"/>
+</site>

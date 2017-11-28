@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	<extension
+   		point="org.eclipse.ui.editors">
+   		<editor
+   			class="de.hu_berlin.cchecker.ui.editors.pdfa.PDFAEditor"
+   			id="MockupConsistencyChecking.pdfaEditor"
+   			filenames="*.pdfa"
+   			name="PDFA Model Viewer"
+   			icon="res/icons/obj16/pa16.png">
+		</editor>
+	</extension>
+   	<extension
+	      point="org.eclipse.ui.editors">
+	      <editor
+            class="de.hu_berlin.cchecker.ui.editors.trace.TracesEditor"
+            id="MockupConsistencyChecking.tracesEditor"
+            filenames="*.trc, *.jtrc, *.strc"
+            name="Trace Data Viewer"
+            icon="res/icons/obj16/trace16.png">
+      </editor>
+	</extension>
+	<extension
+         point="org.eclipse.ui.editors">
+        <editor
+              class="de.hu_berlin.cchecker.ui.editors.report.ReportViewer"
+              id="de.hu_berlin.cchecker.ui.reportviewer"
+              filenames="*.report"
+              name="Report Viewer"
+              icon="res/icons/obj16/report16.png">
+        </editor>
+   </extension>
+    <extension
+         point="org.eclipse.debug.ui.launchShortcuts">
+          <shortcut
+            label="Run Consistency Checker"
+            modes="run"
+            class="de.hu_berlin.cchecker.ui.shortcuts.RunCheckerShortcut"
+            id="de.hu_berlin.cchecker.ui.shortcuts.runchecker">
+         <contextualLaunch>
+           <enablement>
+             <with variable="selection">
+               <count value="2"/>
+               <iterate>
+                 <instanceof value="org.eclipse.core.resources.IResource"/>
+                 <or>
+                   <test property="org.eclipse.core.resources.extension" value="pdfa"/>
+                   <test property="org.eclipse.core.resources.extension" value="trc"/>
+                   <test property="org.eclipse.core.resources.extension" value="jtrc"/>
+                   <test property="org.eclipse.core.resources.extension" value="strc"/>
+                 </or>
+               </iterate>
+             </with>
+           </enablement>
+         </contextualLaunch>
+      </shortcut>
+      <shortcut
+            label="Learn Model From Traces"
+            modes="run"
+            class="de.hu_berlin.cchecker.ui.shortcuts.LearnModelShortcut"
+            id="de.hu_berlin.cchecker.ui.shortcuts.modellearner">
+         <contextualLaunch>
+           <enablement>
+             <with variable="selection">
+               <count value="1"/>
+               <iterate>
+                 <instanceof value="org.eclipse.core.resources.IResource"/>
+                 <or>
+                 	<test property="org.eclipse.core.resources.extension" value="trc"/>
+                 	<test property="org.eclipse.core.resources.extension" value="jtrc"/>
+                 	<test property="org.eclipse.core.resources.extension" value="strc"/>
+                 </or>
+               </iterate>
+             </with>
+           </enablement>
+  		 </contextualLaunch>
+      </shortcut>
+      <shortcut
+            label="Learn SRE From Traces"
+            modes="run"
+            class="de.hu_berlin.cchecker.ui.shortcuts.LearnSREShortcut"
+            id="de.hu_berlin.cchecker.ui.shortcuts.srelearner">
+         <contextualLaunch>
+           <enablement>
+             <with variable="selection">
+               <count value="1"/>
+               <iterate>
+                 <instanceof value="org.eclipse.core.resources.IResource"/>
+                 <or>
+                 	<test property="org.eclipse.core.resources.extension" value="trc"/>
+                 	<test property="org.eclipse.core.resources.extension" value="jtrc"/>
+                 	<test property="org.eclipse.core.resources.extension" value="strc"/>
+                 </or>
+               </iterate>
+             </with>
+           </enablement>
+  		 </contextualLaunch>
+      </shortcut>
+      <shortcut
+            label="Transform SRE to Probabilistic Automaton"
+            modes="run"
+            class="de.hu_berlin.cchecker.ui.shortcuts.TransformSREShortcut"
+            id="de.hu_berlin.cchecker.ui.shortcuts.transformsre">
+         <contextualLaunch>
+           <enablement>
+             <with variable="selection">
+               <count value="1"/>
+               <iterate>
+                 <instanceof value="org.eclipse.core.resources.IResource"/>
+                 <test property="org.eclipse.core.resources.extension" value="sre"/>
+               </iterate>
+             </with>
+           </enablement>
+  		 </contextualLaunch>
+      </shortcut>
+      <shortcut
+            label="Run Consistency Checker with SRE"
+            modes="run"
+            class="de.hu_berlin.cchecker.ui.shortcuts.RunSRECheckerShortcut"
+            id="de.hu_berlin.cchecker.ui.shortcuts.runsrechecker">
+         <contextualLaunch>
+           <enablement>
+             <with variable="selection">
+               <count value="2"/>
+               <iterate>
+                 <instanceof value="org.eclipse.core.resources.IResource"/>
+                 <or>
+                   <test property="org.eclipse.core.resources.extension" value="sre"/>
+                   <test property="org.eclipse.core.resources.extension" value="trc"/>
+                   <test property="org.eclipse.core.resources.extension" value="jtrc"/>
+                   <test property="org.eclipse.core.resources.extension" value="strc"/>
+                 </or>
+               </iterate>
+             </with>
+           </enablement>
+         </contextualLaunch>
+      </shortcut>
+      <shortcut
+            label="Open in Cytoscape"
+            modes="run"
+            class="de.hu_berlin.cchecker.ui.shortcuts.DisplayInCytoscapeShortcut"
+            id="de.hu_berlin.cchecker.ui.shortcuts.cytoscapeviewer">
+         <contextualLaunch>
+           <enablement>
+             <with variable="selection">
+               <count value="1"/>
+               <iterate>
+                 <instanceof value="org.eclipse.core.resources.IResource"/>
+                 <test property="org.eclipse.core.resources.extension" value="pdfa"/>
+               </iterate>
+             </with>
+           </enablement>
+  		 </contextualLaunch>
+      </shortcut>
+   </extension>
+   <extension
+	      point="org.eclipse.ui.perspectiveExtensions">
+	    <perspectiveExtension
+	          targetID="org.eclipse.ui.resourcePerspective">
+	          <actionSet
+	                id="org.eclipse.debug.ui.launchActionSet">
+	          </actionSet>
+	    </perspectiveExtension>
+	</extension>
+</plugin>

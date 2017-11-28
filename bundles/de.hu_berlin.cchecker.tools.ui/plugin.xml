@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="de.hu_berlin.cchecker.tools.ui"
+            name="Consistency Checking Framework Tools">
+      </category>
+      <wizard
+            category="de.hu_berlin.cchecker.tools.ui"
+            class="de.hu_berlin.cchecker.tools.ui.wizards.RandomProbabilisticAutomatonWizard"
+            id="de.hu_berlin.cchecker.tools.ui.wizards.RandomProbabilisticAutomatonWizard"
+            name="Create A Random Probabilistic Automaton">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchShortcuts">
+      <shortcut
+            label="Generate trace sample set"
+            modes="run"
+            class="de.hu_berlin.cchecker.tools.ui.shortcuts.GenerateTraceSampleSetShortcut"
+            id="de.hu_berlin.cchecker.tools.ui.shortcuts.generateSampleSet">
+         <contextualLaunch>
+           <enablement>
+             <with variable="selection">
+               <count value="1"/>
+               <iterate>
+                 <instanceof value="org.eclipse.core.resources.IResource"/>
+                 <test property="org.eclipse.core.resources.extension" value="pdfa"/>
+               </iterate>
+             </with>
+           </enablement>
+  		 </contextualLaunch>
+      </shortcut>
+      
+   </extension>
+
+</plugin>

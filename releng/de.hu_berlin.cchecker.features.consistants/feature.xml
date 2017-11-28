@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="ConsistAnts"
+      label="ConsistAnts"
+      version="1.0.0.qualifier"
+      provider-name="de.hu_berlin">
+
+   <description>
+      Eclipse Plugins that support Consistency Checking of quantitive software quality models.
+   </description>
+
+   <plugin
+         id="de.hu_berlin.cchecker.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="edu.duke.cs.jflap"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.fasterxml.jackson"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.emfjson-jackson"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="de.hu_berlin.cchecker.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="de.uni_stuttgart.beehts.sredtmctransformations"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
