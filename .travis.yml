@@ -8,7 +8,7 @@ jdk: oraclejdk8
 env: 
   global:
    - DISPLAY=:99.0  
-   - MAVEN_DIR=apache-maven-3.5.0
+   - MAVEN_DIR=apache-maven-3.5.2
 
 addons:
   apt:
@@ -24,7 +24,7 @@ before_install:
    if [ ! -d $HOME/${MAVEN_DIR}/bin ]; 
    then
     pushd ~
-    wget http://apache.lauf-forum.at/maven/maven-3/3.5.0/binaries/${MAVEN_DIR}-bin.tar.gz
+    wget http://apache.lauf-forum.at/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz
     tar xvf ${MAVEN_DIR}-bin.tar.gz
 
     popd
