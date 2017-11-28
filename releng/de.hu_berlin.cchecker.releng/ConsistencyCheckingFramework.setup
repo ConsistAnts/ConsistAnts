@@ -187,7 +187,7 @@
     <setupTask
         xsi:type="setup:EclipseIniTask"
         option="-Doomph.redirection.consistency.checking.dev.project.git"
-        value="=https://raw.githubusercontent.com/ConsistAnts/ConsistAnts/master/releng/de.hu_berlin.cchecker.releng/ConsistencyCheckingFramework.setup"
+        value="=https://raw.githubusercontent.com/ConsistAnts/ConsistAnts/master/releng/de.hu_berlin.cchecker.releng/ConsistencyCheckingFramework.setup->${git.clone.consistency.checking.dev.project.git.location|uri}/releng/de.hu_berlin.cchecker.releng/ConsistencyCheckingFramework.setup"
         vm="true">
       <description>
         Set an Oomph redirection system property to redirect the
