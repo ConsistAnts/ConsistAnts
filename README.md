@@ -1,5 +1,7 @@
 # ConsistAnts
 
+[![Build Status](https://travis-ci.org/ConsistAnts/ConsistAnts.svg?branch=master)](https://travis-ci.org/ConsistAnts/ConsistAnts)
+
 In large-scale software systems, quantitative software quality models can be used to model the system behaviour and support the satisfaction of increasing quality requirements on an abstract level. Such models, however, are only of use if they actually represent the system behaviour in a complete and accurate fashion. To verify whether the consistency between model and system behaviour is high enough, checking tools are required.
 
 In the ConsistAnts project we have implemented tools that provide support to perform consistency checks of software event logs with given quantitative software quality models. For that we introduce a consistency checking algorithm that is based on footprint matrices as known from process theory. 
@@ -11,7 +13,6 @@ We have also implemented two different learning algorithms that allow to learn q
 The project is implemented in means of an Eclipse plugin but all functionality is also exposed via a command line interface ([Usage](https://github.com/ConsistAnts/ConsistAnts/wiki/Using-the-Consistency-Checking-Command-Line-Interface)).
 
 
-[![Build Status](https://travis-ci.org/ConsistAnts/ConsistAnts.svg?branch=master)](https://travis-ci.org/ConsistAnts/ConsistAnts)
 
 ## Getting Started
 
