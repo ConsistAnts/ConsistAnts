@@ -11,7 +11,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import de.hu_berlin.cchecker.core.checking.FootprintMatrixCheckingAlgorithm;
 import de.hu_berlin.cchecker.core.checking.report.ConsistencyReport;
 import de.hu_berlin.cchecker.core.checking.report.ConsistencyReportUtils;
 import de.hu_berlin.cchecker.core.models.pdfa.ProbabilisticAutomata;
@@ -37,7 +36,6 @@ public class ConsistencyCheckingSystemTest extends AbstractFootprintMatrixTest {
 		TraceDataset task1Traces = TraceTestUtils.getTask1TraceDataset();
 		
 		ConsistencyReport report = algorithm.performConsistencyCheck(alergiaResult, task1Traces, new NullProgressMonitor());
-		
 		String reportExpectation = new String(Files.readAllBytes(Paths.get("res/reports/task1.expectation.report")));
 		
 		assertEquals("Consistency report looks as expected", reportExpectation, ConsistencyReportUtils.createTextualReport(report));

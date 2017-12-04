@@ -2,11 +2,13 @@ package de.hu_berlin.cchecker.core.checking.report;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 
@@ -25,7 +27,7 @@ public class ConsistencyReportUtils {
 	public static String createTextualReport(ConsistencyReport report) {
 		StringBuilder result = new StringBuilder();
 		result.append("===> Conformance Report <===\n\n");
-		DecimalFormat df = new DecimalFormat("#.####");
+		DecimalFormat df = new DecimalFormat("#.####", DecimalFormatSymbols.getInstance(Locale.ENGLISH));
 		df.setRoundingMode(RoundingMode.CEILING);
 
 		EList<ConsistencyLengthResult> resultMatrices = report.getFootprintMatrices();
