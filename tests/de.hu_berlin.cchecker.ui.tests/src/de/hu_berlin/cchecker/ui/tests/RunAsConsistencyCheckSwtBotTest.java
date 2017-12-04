@@ -42,7 +42,7 @@ public class RunAsConsistencyCheckSwtBotTest extends AbstractUITest {
 		waitForJobs(null, "All jobs");
 		focusPackageExplorer();
 		
-		bot.waitUntil(treeHasItem(bot.tree(), TEST_PROJECT_NAME));
+		bot.waitUntil(treeHasItem(bot, TEST_PROJECT_NAME));
 
 		projectItem = bot.tree()
 			.getTreeItem(TEST_PROJECT_NAME);

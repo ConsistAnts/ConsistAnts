@@ -17,7 +17,6 @@ import org.eclipse.swtbot.eclipse.finder.SWTWorkbenchBot;
 import org.eclipse.swtbot.swt.finder.SWTBot;
 import org.eclipse.swtbot.swt.finder.junit.SWTBotJunit4ClassRunner;
 import org.eclipse.swtbot.swt.finder.waits.ICondition;
-import org.eclipse.swtbot.swt.finder.widgets.SWTBotTree;
 import org.eclipse.swtbot.swt.finder.widgets.SWTBotTreeItem;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -59,7 +58,7 @@ public abstract class AbstractUITest {
 		
 		waitForWorkspaceWindow();
 	}
-
+	
 	public static void focusPackageExplorer() {
 		bot.viewById("org.eclipse.jdt.ui.PackageExplorer").setFocus();
 	}
@@ -105,6 +104,8 @@ public abstract class AbstractUITest {
 	
 		bot.button("Finish")
 			.click();
+		
+		waitForWorkspaceWindow();
 	}
 	
 	protected static void waitForTreeItems(SWTBotTreeItem item) {
@@ -118,9 +119,9 @@ public abstract class AbstractUITest {
 		}));
 	}
 	
-	protected static ICondition treeHasItem(SWTBotTree tree, String item) {
+	protected static ICondition treeHasItem(SWTBot bot, String item) {
 		return holdsTrue("Tree has item " + item, b -> {
-			for (SWTBotTreeItem swtBotTreeItem : tree.getAllItems()) {
+			for (SWTBotTreeItem swtBotTreeItem : bot.tree().getAllItems()) {
 				if (swtBotTreeItem.getText().equals(item)) {
 					return true;
 				}
@@ -224,10 +225,10 @@ public abstract class AbstractUITest {
 	 */
 	private static Path replaceFilename(Path p, String filename) {
 		if (p.getNameCount() <= 1) {
-			return Paths.get("/" + filename);
+			return Paths.get(filename);
 		} else {
-			return Paths.get("/" + p.subpath(0, p.getNameCount() - 1)
-				.toString(), filename);
+			return p.getRoot().resolve(p.subpath(0, p.getNameCount() - 1)
+					.toString()).resolve(filename);
 		}
 	}
 
@@ -255,9 +256,9 @@ public abstract class AbstractUITest {
 					return;
 				}
 				try {
-					Files.copy(p, destPath);
+					Files.copy(p.toAbsolutePath(), destPath.toAbsolutePath());
 				} catch (IOException e) {
-					LOGGER.log(Level.SEVERE, "Failed to copy test project resource " + p);
+					LOGGER.log(Level.SEVERE, "Failed to copy test project resource '" + p + "' to '" + destPath.toAbsolutePath() + "'");
 				}
 			});
 	}
