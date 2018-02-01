@@ -1,3 +1,8 @@
+# VM details
+Please see the following link how to use the tool under
+https://box.hu-berlin.de/f/66f6f53f379f4c6aaf11/?dl=1
+by importing the image in your VM.
+
 # ConsistAnts
 
 [![Build Status](https://travis-ci.org/ConsistAnts/ConsistAnts.svg?branch=master)](https://travis-ci.org/ConsistAnts/ConsistAnts)
